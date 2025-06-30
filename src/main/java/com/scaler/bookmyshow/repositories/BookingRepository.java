@@ -14,4 +14,6 @@ import java.util.Optional;
 public interface BookingRepository extends JpaRepository<Booking, Long> {
    Optional<Booking> findById(Long id);
 
+   Booking save(Booking booking);
+
 }
